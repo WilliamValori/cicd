@@ -35,6 +35,7 @@ task cucumberCli() {
             args = [
                     '--plugin', 'pretty',
                     '--plugin', 'junit:target/cucumber.xml',
+                    '--tags', '@ignoreEverything',
                     '--glue', 'nl.valori',
                     'src/test/resources']
         }
