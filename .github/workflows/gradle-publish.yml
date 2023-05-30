@@ -42,3 +42,9 @@ jobs:
       env:
         USERNAME: ${{ github.actor }}
         TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Publish Cucumber report
+      uses: mikepenz/action-junit-report@v2
+      with:
+        report_files: 'target/cucumber-report.html'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
