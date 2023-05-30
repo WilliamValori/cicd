@@ -36,7 +36,7 @@ task cucumberCli() {
                     '--plugin', 'pretty',
                     '--plugin', 'junit:target/cucumber.xml',
                     '--tags', '@onlythisone',
-                    '--glue', 'src/test/java/stepDefs',
+                    '--glue', 'stepDefs',
                     'src/test/resources']
         }
     }
