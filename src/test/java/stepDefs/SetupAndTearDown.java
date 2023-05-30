@@ -12,19 +12,19 @@ public class SetupAndTearDown {
 
     @Before
     public static void setupClass(){
-//        WebDriverManager.chromedriver().setup();
-//        driver = new ChromeDriver();
-
-        WebDriverManager.firefoxdriver().setup();
-        driver = new FirefoxDriver();
+////        WebDriverManager.chromedriver().setup();
+////        driver = new ChromeDriver();
+//
+//        WebDriverManager.firefoxdriver().setup();
+//        driver = new FirefoxDriver();
     }
 
     @After
     public static void terminateClass(){
-        driver.quit();
+//        driver.quit();
     }
 
     public static WebDriver getFinalDriver(){
-        return driver;
+        return null;
     }
 }
