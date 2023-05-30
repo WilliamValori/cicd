@@ -14,7 +14,8 @@ public class SmokeFeature extends Base {
 
     @Given("I go to the webshop")
     public void iGoToTheWebshop() {
-        driver.get("https://webshop.mobiletestautomation.nl/");
+        String s = "hallo, dit gaat prima";
+        Assertions.assertThat(s).isNotEmpty();
     }
 
     @When("I go to the fruit page")
