@@ -1,0 +1,11 @@
+
+    public void subscribeToNewsLetter() {
+        driver.findElement(subscribeNewsLetterField).sendKeys("testerino@tester.com");
+        driver.findElement(subscribeNewsLetterButton).click();
+    }
+
+    public WebElement getNewsLetterSubscribtionAlert() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(NewsLetterSubscriptionAlert));
+        return driver.findElement(NewsLetterSubscriptionAlert);
+    }
